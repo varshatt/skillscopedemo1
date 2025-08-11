@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SKILLSCOPE - Monochrome Elegance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="header" role="banner" aria-label="Site header">
+    <div class="header-inner container">
+      <h1 class="logo" tabindex="0">SKILLSCOPE</h1>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#about-section" class="nav-link">About</a></li>
+          <li><a href="#features-section" class="nav-link">Features</a></li>
+          <li><a href="#how-it-works-section" class="nav-link">How It Works</a></li>
+          <li><a href="#resources-section" class="nav-link">Resources</a></li>
+          <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-container container">
+
+    <!-- Hero Section -->
+    <section class="hero-section glass-panel" role="region" aria-label="Introduction and mascot">
+      <div class="hero-content">
+        <div class="mascot-container" aria-label="Mascot Illustration" role="img" aria-hidden="true">
+          <div class="mascot-container" aria-label="Mascot Illustration" role="img" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Mascot illustration" width="120" height="120" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Head -->
+    <circle cx="60" cy="30" r="16" />
+    <!-- Neck -->
+    <line x1="60" y1="46" x2="60" y2="52" />
+    <!-- Shoulders -->
+    <path d="M35 60 Q60 85 85 60" />
+    <!-- Body -->
+    <path d="M42 90 L42 65 Q60 75 78 65 L78 90" />
+    <!-- Arms -->
+    <path d="M35 60 L28 85" />
+    <path d="M85 60 L92 85" />
+  </svg>
+</div>
+
+        </div>
+        <div class="hero-text">
+          <h2 tabindex="0">Discover the Best Free Learning Resources</h2>
+          <p tabindex="0">Explore our uniquely curated, rich catalog of free tutorials, courses, videos, and materials to master any skill.</p>
+          <p tabindex="0" class="subtle-tagline">Monochrome elegance meets educational depth.</p>
+        </div>
+      </div>
+      <div class="call-to-action" role="form" aria-label="Skill search form">
+        <label for="skillInput" class="input-label">Enter your preferred skill to learn:</label>
+        <div class="input-wrapper">
+          <input id="skillInput" name="skill" type="text" placeholder="e.g., Data Science" autocomplete="off" aria-required="true" aria-describedby="input-help" />
+          <button type="button" id="searchBtn" aria-label="Search resources for entered skill">Search</button>
+        </div>
+        <small id="input-help" class="input-help-text">Start typing a skill and click Search to explore top free learning resources.</small>
+      </div>
+    </section>
+
+    <!-- Info Sections Group -->
+    <section class="info-sections">
+
+      <!-- About Section -->
+      <section id="about-section" class="info-section glass-panel" role="region" aria-labelledby="about-title">
+        <h3 id="about-title" tabindex="0">About This Website</h3>
+        <p tabindex="0">Skill Resource Finder centralizes the best handpicked, free educational content from trusted providers in a sleek monochrome interface designed for focus and clarity.</p>
+        <p tabindex="0">Our dynamically growing resource base ensures you stay updated on the latest and greatest learning materials across diverse skill domains.</p>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features-section" class="info-section glass-panel" role="region" aria-labelledby="features-title">
+        <h3 id="features-title" tabindex="0">Features & Benefits</h3>
+        <ul class="feature-list" tabindex="0" aria-label="Features list">
+          <li><strong>Rigorous Curation:</strong> Resources evaluated for quality and relevance.</li>
+          <li><strong>Extensive Database:</strong> Thousands of up-to-date tutorials, videos, and courses.</li>
+          <li><strong>Real-Time Updates:</strong> Continuous additions based on trends and user input.</li>
+          <li><strong>Smart Search:</strong> Results tailored to your skill inputs and preferences.</li>
+          <li><strong>Minimalistic UI:</strong> A grayscale palette focused on comfort and concentration.</li>
+          <li><strong>Completely Free:</strong> Access all content without fees or subscriptions.</li>
+        </ul>
+      </section>
+
+      <!-- How It Works Section -->
+      <section id="how-it-works-section" class="info-section glass-panel" role="region" aria-labelledby="how-it-works-title">
+        <h3 id="how-it-works-title" tabindex="0">How It Works</h3>
+        <ol class="steps-list" tabindex="0" aria-label="How it works steps">
+          <li><strong>Input your desired skill</strong> using the search prompt above.</li>
+          <li><strong>We fetch curated resources</strong> from trusted educational platforms.</li>
+          <li><strong>Browse rich resource cards</strong> with descriptions, ratings, and direct links.</li>
+          <li><strong>Dive in and learn</strong> through engaging, free-quality material.</li>
+        </ol>
+        <p tabindex="0">Our aim is to make skill acquisition streamlined, distraction-free, and enjoyable.</p>
+      </section>
+
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources-section" class="resources-section glass-panel" role="region" aria-label="Search results">
+      <h3 tabindex="0">Top Free Resources</h3>
+      <p id="no-results-text" class="no-results-msg" tabindex="0">No search initiated yet. Use the prompt above to begin your learning adventure.</p>
+      <div class="resource-cards" aria-live="polite" aria-relevant="additions removals"></div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials-section" class="testimonials-section glass-panel" role="region" aria-labelledby="testimonials-title">
+      <h3 id="testimonials-title" tabindex="0">What Our Learners Say</h3>
+      <article tabindex="0" class="testimonial">
+        <p>"This platform made accessing high-quality learning resources effortless and focused. A must-have for self-learners."</p>
+        <footer>— Jordan M.</footer>
+      </article>
+      <article tabindex="0" class="testimonial">
+        <p>"The elegant, grayscale design helps me concentrate and enjoy browsing without distractions."</p>
+        <footer>— Aisha K.</footer>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section glass-panel" role="region" aria-labelledby="contact-title">
+      <h3 id="contact-title" tabindex="0">Contact & Feedback</h3>
+      <p tabindex="0">Questions, suggestions, or partnerships? Reach out below—we’re eager to connect with you.</p>
+      <form class="contact-form" aria-label="Contact form" novalidate>
+        <label for="contact-email" class="contact-label">Email:</label>
+        <input id="contact-email" type="email" name="email" placeholder="you@example.com" required aria-required="true" aria-describedby="email-error" />
+        <span id="email-error" class="form-error" aria-live="assertive"></span>
+
+        <label for="contact-message" class="contact-label">Message:</label>
+        <textarea id="contact-message" name="message" placeholder="Write your message here..." rows="5" required aria-required="true" aria-describedby="message-error"></textarea>
+        <span id="message-error" class="form-error" aria-live="assertive"></span>
+
+        <button type="submit" class="contact-submit-btn" aria-label="Send message">Send Message</button>
+      </form>
+      <div id="form-status" role="alert" aria-live="polite"></div>
+    </section>
+
+  </main>
+
+  <footer class="footer-section" role="contentinfo">
+    <div class="footer-inner container">
+      <p>&copy; 2025 Skill Resource Finder | College Project</p>
+      <ul class="footer-links" role="list">
+        <li><a href="#header" class="footer-link">Back to top</a></li>
+        <li><a href="#contact-section" class="footer-link">Contact</a></li>
+        <li><a href="#about-section" class="footer-link">About</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
